@@ -2,8 +2,7 @@ import { lightbox } from "../main";
 
 const imageGallery = document.querySelector(".gallery");  
 
-export function renderGallery(images) {    
-    refresh();
+export function renderGallery(images) {        
     const markup = images
         .map((image) =>
             `<li class="gallery-item">
@@ -51,4 +50,5 @@ export function renderLoader() {
 }
  export function refresh () { 
         imageGallery.innerHTML = "";
-    }
+}
+    
